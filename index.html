@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MealMe</title>
+</head>
+<body>
+    <div class="dropdown offset-11 mt-3">
+        <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <i id="favoritesStar" class="bi bi-star-fill text-warning"></i>
+        </button>
+        <ul id="fave-dropdown" class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <!-- <li class="dropdown-item">Example without link</li>
+            <li class="dropdown-item">Example without link</li>
+            <li class="dropdown-item">Example without link</li> -->
+        </ul>
+    </div>
+    <div id="search-div">
+            <h1 class="text-center pt-5 pb-2">
+                <span style="color: #176bef">M</span>
+                <span style="color: #ff3e30">e</span>
+                <span style="color: #f7b529">a</span>
+                <span style="color: #176bef">l</span>
+                <span style="color: #179c52">M</span>
+                <span style="color: #ff3e30">e</span>
+            </h1>
+        <form class="pb-5" id="search-form">
+            <div class="row mb-2 justify-content-center">
+                <div class="col-10 col-md-6">
+                    <div class="input-group">
+                        <input class="form-control" type="text" id="search-text" name="search-text" placeholder="search for a recipe">
+                        <div class="input-group-text"><i class="bi bi-search"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <!-- <input class="btn btn-light col-md-2 mx-2" type="button" id="search-submit" value="Search"> -->
+                <input class="btn btn-light col-md-3 col-lg-2 col-6 mx-2" type="submit" id="random-button" value="I'm feelin' hungry">
+            </div>
+        </form>
+    </div>
+    <div id="alert-div" class="row">
+        <div id="alert" class="col-md-6 col-10 mx-auto alert alert-warning invisible text-center mx-5 mb-5" role="alert">
+            Your search - insert query here - did not match any recipes.
+          </div>
+    </div>
+    <div id="results" class="text-center pb-5 px-5 invisible">
+        <h2 id="meal-name" class="pb-1">Meal Name</h2>
+        <div id="stars-div" class="pb-4">
+            <i id="" class="star-1 bi bi-star"></i>
+        </div>
+        <!-- <div id="star-button"><button type="button" class="btn btn-outline-warning"><i id="star-test" class="bi bi-star"></i></button>
+        </div> -->
+        <div class="col-6 mx-auto">
+            <img id="meal-image" class="rounded pb-4 img-fluid" src="https://www.russorizio.com/wp-content/uploads/2016/07/ef3-placeholder-image.jpg" alt="food name image">
+        </div>
+        <div id="ingredients-div">
+            <h3>Ingredients</h3>
+            <ul class="list-group align-items-center pb-3 list-unstyled" id="ingredients"></ul>
+        </div>
+        <div id="instructions-div" class="col-8 col-md-8 mx-auto">
+            <h3>Instructions</h3>
+            <p id="instructions">instructions</p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

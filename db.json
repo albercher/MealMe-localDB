@@ -1,0 +1,28 @@
+{
+  "favorites": [
+    {
+      "idMeal": "52971",
+      "strMeal": "Kafteji"
+    },
+    {
+      "idMeal": "52791",
+      "strMeal": "Eton Mess"
+    },
+    {
+      "idMeal": "53013",
+      "strMeal": "Big Mac"
+    },
+    {
+      "idMeal": "52871",
+      "strMeal": "Yaki Udon"
+    },
+    {
+      "idMeal": "52769",
+      "strMeal": "Kapsalon"
+    },
+    {
+      "idMeal": "52926",
+      "strMeal": "Tourtiere"
+    }
+  ]
+}
